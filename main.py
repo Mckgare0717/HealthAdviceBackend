@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-
+from api import Users
 
 
 app =FastAPI()
@@ -20,9 +20,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-SECRET_KEY = "HealthAdvice"
 
 
+app.include_router(Users.router,prefix="/users",tags=["users"])
 @app.get("/")
 def welcmePg():
     return{"welcome to my page"}
