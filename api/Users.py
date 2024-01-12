@@ -16,30 +16,39 @@ class AuthCreds(BaseModel):
 class Login(BaseModel):
     email:str
     password:str
+    
+class LoginResponse(BaseModel):
+    name:str
+    email:str
+    id:str
+    token:str
 
 @router.post("/register")
 async def newUser(creds:AuthCreds):
     users = getUser()
-    print(users)
     
-    if creds.email in [users['user']["email"] for users["users"] in users["users"]]:
-        raise HTTPException(status_code=400,detail="Email already registered.")
-    else:
-        id = str(uuid.uuid1())
-        tokenID = {"sub":id}
-        token  = jwt.encode(tokenID,SECRET_KEY,algorithm="HS256")
+    
+    for user in users["users"]:
+        if creds.email == user["email"]:
+            raise HTTPException(status_code=400,detail="Email already registered.")
+
+    id = str(uuid.uuid1())
+    tokenID = {"sub":id}
+    token  = jwt.encode(tokenID,SECRET_KEY,algorithm="HS256")
         
-        userNew = {
-            "id" : id,
-            "name":creds.name,
-            "email": creds.email,
-            "password":creds.password,
-            "access_token":token
-        }
+    userNew = {
+        "id" : id,
+        "name":creds.name,
+        "email": creds.email,
+        "password":creds.password,
+        "access_token":token
+    }
         
-        users["users"].append(userNew)
-        saveUser(users)
-        return(userNew)
+    
+        
+    users["users"].append(userNew)
+    saveUser(users)
+    return userNew
     
 
 
@@ -48,8 +57,10 @@ async def loginUser(user:Login):
     users = getUser()
     
     for u in users["users"]:
+        print(users["users"])
+        print(u["email"])
         if u["email"] == user.email and u["password"]==user.password:
             return u
-        else:
-            raise HTTPException(status_code=400,detail="Incorrect credentials")
+        
+    raise HTTPException(status_code=400,detail="Incorrect credentials")
         

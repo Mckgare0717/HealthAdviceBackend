@@ -5,6 +5,20 @@
             "name": "bob",
             "email": "bob@gmail.com",
             "password": "1234"
+        },
+        {
+            "id": "5760ddfb-b145-11ee-91c1-00be439b70a4",
+            "name": "string",
+            "email": "string",
+            "password": "string",
+            "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1NzYwZGRmYi1iMTQ1LTExZWUtOTFjMS0wMGJlNDM5YjcwYTQifQ.fWJpaL2HK1-5pvau0eWC9F3jg4YlhScmBJT6HjZSVjo"
+        },
+        {
+            "id": "6757df1e-b146-11ee-b9f3-00be439b70a4",
+            "name": "mad",
+            "email": "mad@ucb.co",
+            "password": "1234",
+            "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzU3ZGYxZS1iMTQ2LTExZWUtYjlmMy0wMGJlNDM5YjcwYTQifQ.QmoFmTR3hoarJDxdmqmWv03EX4mrD7oXybZ7PIztp5E"
         }
     ]
 }
