@@ -57,8 +57,6 @@ async def loginUser(user:Login):
     users = getUser()
     
     for u in users["users"]:
-        print(users["users"])
-        print(u["email"])
         if u["email"] == user.email and u["password"]==user.password:
             return u
         

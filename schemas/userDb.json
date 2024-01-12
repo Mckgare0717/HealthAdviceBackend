@@ -19,6 +19,13 @@
             "email": "mad@ucb.co",
             "password": "1234",
             "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzU3ZGYxZS1iMTQ2LTExZWUtYjlmMy0wMGJlNDM5YjcwYTQifQ.QmoFmTR3hoarJDxdmqmWv03EX4mrD7oXybZ7PIztp5E"
+        },
+        {
+            "id": "7436f8a4-b161-11ee-ae3a-cc2f71e07e4a",
+            "name": "babu",
+            "email": "babu@uxb.co",
+            "password": "123456",
+            "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3NDM2ZjhhNC1iMTYxLTExZWUtYWUzYS1jYzJmNzFlMDdlNGEifQ.aZUf0Igiu4SfkFVugYmnorNnSvOoZhOK-WDKQK4gJjk"
         }
     ]
 }
