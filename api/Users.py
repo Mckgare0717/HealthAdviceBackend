@@ -61,4 +61,15 @@ async def loginUser(user:Login):
             return u
         
     raise HTTPException(status_code=400,detail="Incorrect credentials")
-        
+
+
+class connectionVal(BaseModel):
+    letConnect : bool
+
+@router.post("/connection")
+async def connectVal(connect:connectionVal):
+    if connect.letConnect == True:
+        print("connection successful")
+    else:
+        print("connection not success")
+

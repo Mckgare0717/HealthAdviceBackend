@@ -26,6 +26,20 @@
             "email": "babu@uxb.co",
             "password": "123456",
             "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3NDM2ZjhhNC1iMTYxLTExZWUtYWUzYS1jYzJmNzFlMDdlNGEifQ.aZUf0Igiu4SfkFVugYmnorNnSvOoZhOK-WDKQK4gJjk"
+        },
+        {
+            "id": "2385bd01-d16e-11ee-bd59-00a5541ff9ef",
+            "name": "mak",
+            "email": "mak@uxb.co",
+            "password": "12345",
+            "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMzg1YmQwMS1kMTZlLTExZWUtYmQ1OS0wMGE1NTQxZmY5ZWYifQ.xDK-zlYgxCz21ehrlYt94_1v2E3ETJ6--ghxvXT1gq8"
+        },
+        {
+            "id": "44780cdd-d22b-11ee-ba04-00a5541ff9ef",
+            "name": "hamza",
+            "email": "hamza@fck.co.uk",
+            "password": "12345",
+            "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI0NDc4MGNkZC1kMjJiLTExZWUtYmEwNC0wMGE1NTQxZmY5ZWYifQ.Xag5cUTwBNllMVyKLI6kugHptxBdRGZaI9SoXHFBwcE"
         }
     ]
 }
